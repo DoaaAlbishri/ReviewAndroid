@@ -1,8 +1,8 @@
-package com.example.review
+package com.example.review.API
 
 import com.google.gson.annotations.SerializedName
 
-class User {
+class Users {
     var data: List<UserDetails>? = null
 
     class UserDetails {

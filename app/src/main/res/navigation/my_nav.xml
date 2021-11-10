@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/fragment_main">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.review.fragment_main"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_fav"
+            app:destination="@id/fragment_fav" />
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_add"
+            app:destination="@id/fragment_add" />
+        <action
+            android:id="@+id/action_fragment_main_to_fragment_upde"
+            app:destination="@id/fragment_upde" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_add"
+        android:name="com.example.review.fragment_add"
+        android:label="fragment_add"
+        tools:layout="@layout/fragment_add" >
+        <action
+            android:id="@+id/action_fragment_add_to_fragment_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_upde"
+        android:name="com.example.review.fragment_upde"
+        android:label="fragment_upde"
+        tools:layout="@layout/fragment_upde" >
+        <action
+            android:id="@+id/action_fragment_upde_to_fragment_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragment_fav"
+        android:name="com.example.review.fragment_fav"
+        android:label="fragment_fav"
+        tools:layout="@layout/fragment_fav" >
+        <action
+            android:id="@+id/action_fragment_fav_to_fragment_main"
+            app:destination="@id/fragment_main" />
+    </fragment>
+</navigation>

@@ -1,4 +1,4 @@
-package com.example.review
+package com.example.review.API
 
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
